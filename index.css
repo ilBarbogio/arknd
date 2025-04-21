@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  touch-action:none;
+  width:100vw;
+  height:100vh;
+  background-color: black;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+canvas{
+  background-image: url("./background.png");
+  background-repeat: repeat;
+  background-size: 128px;
+  background-position: 32px 32px;
+}

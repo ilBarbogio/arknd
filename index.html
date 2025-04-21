@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./components/components.js" type="module"></script>
+  <script type="importmap">
+    {
+      "imports":{
+        "controls":"./scripts/controls.js",
+        "audio":"./scripts/audio.js",
+        "utils":"./scripts/utils.js",
+        "index":"./index.js",
+        "level":"./scripts/level.js",
+        "canvas":"./scripts/canvas.js",
+        "ball":"./scripts/ball.js",
+        "paddle":"./scripts/paddle.js",
+        "bricks":"./scripts/bricks.js"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <div>
+    <canvas></canvas>
+
+    <slide-controls></slide-controls>
+  </div>
+
+
+  <keyboard-controls enabled type="8dir">
+    <!-- <span data-key="w">up</span> -->
+    <span data-key="d">right</span>
+    <!-- <span data-key="s">down</span> -->
+    <span data-key="a">left</span>
+    <span data-key="j">fire1</span>
+    <!-- <span data-key="k">fire2</span>
+    <span data-key="i">jump</span> -->
+  </keyboard-controls>
+  
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
